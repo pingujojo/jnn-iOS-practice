@@ -22,6 +22,11 @@
 		21B9717D191670D400824298 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B9715C191670D400824298 /* UIKit.framework */; };
 		21B97185191670D400824298 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21B97183191670D400824298 /* InfoPlist.strings */; };
 		21B97187191670D400824298 /* StanfordCardGame1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B97186191670D400824298 /* StanfordCardGame1Tests.m */; };
+		21B971921916710600824298 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B971911916710600824298 /* Card.m */; };
+		21B9719519174B6900824298 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B9719419174B6900824298 /* Deck.m */; };
+		21B971981917559C00824298 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B971971917559C00824298 /* PlayingCard.m */; };
+		21B9719B1918DC8E00824298 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B9719A1918DC8E00824298 /* PlayingCardDeck.m */; };
+		21DB5CDC193225CF005ADAA0 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DB5CDB193225CF005ADAA0 /* CardMatchingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,16 @@
 		21B97182191670D400824298 /* StanfordCardGame1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StanfordCardGame1Tests-Info.plist"; sourceTree = "<group>"; };
 		21B97184191670D400824298 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		21B97186191670D400824298 /* StanfordCardGame1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StanfordCardGame1Tests.m; sourceTree = "<group>"; };
+		21B971901916710600824298 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = ../Card.h; sourceTree = "<group>"; };
+		21B971911916710600824298 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = ../Card.m; sourceTree = "<group>"; };
+		21B9719319174B6900824298 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		21B9719419174B6900824298 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		21B971961917559C00824298 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		21B971971917559C00824298 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		21B971991918DC8E00824298 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		21B9719A1918DC8E00824298 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
+		21DB5CDA193225CF005ADAA0 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
+		21DB5CDB193225CF005ADAA0 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +129,22 @@
 		21B9715E191670D400824298 /* StanfordCardGame1 */ = {
 			isa = PBXGroup;
 			children = (
+				21B971901916710600824298 /* Card.h */,
+				21B971911916710600824298 /* Card.m */,
+				21B9719319174B6900824298 /* Deck.h */,
+				21B9719419174B6900824298 /* Deck.m */,
+				21B971961917559C00824298 /* PlayingCard.h */,
+				21B971971917559C00824298 /* PlayingCard.m */,
+				21B971991918DC8E00824298 /* PlayingCardDeck.h */,
+				21B9719A1918DC8E00824298 /* PlayingCardDeck.m */,
 				21B97167191670D400824298 /* AppDelegate.h */,
 				21B97168191670D400824298 /* AppDelegate.m */,
 				21B9716A191670D400824298 /* Main_iPhone.storyboard */,
 				21B9716D191670D400824298 /* Main_iPad.storyboard */,
 				21B97170191670D400824298 /* ViewController.h */,
 				21B97171191670D400824298 /* ViewController.m */,
+				21DB5CDA193225CF005ADAA0 /* CardMatchingGame.h */,
+				21DB5CDB193225CF005ADAA0 /* CardMatchingGame.m */,
 				21B97173191670D400824298 /* Images.xcassets */,
 				21B9715F191670D400824298 /* Supporting Files */,
 			);
@@ -253,9 +278,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B971981917559C00824298 /* PlayingCard.m in Sources */,
+				21B9719519174B6900824298 /* Deck.m in Sources */,
 				21B97172191670D400824298 /* ViewController.m in Sources */,
 				21B97169191670D400824298 /* AppDelegate.m in Sources */,
+				21DB5CDC193225CF005ADAA0 /* CardMatchingGame.m in Sources */,
+				21B9719B1918DC8E00824298 /* PlayingCardDeck.m in Sources */,
 				21B97165191670D400824298 /* main.m in Sources */,
+				21B971921916710600824298 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +500,7 @@
 				21B9718C191670D400824298 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21B9718D191670D400824298 /* Build configuration list for PBXNativeTarget "StanfordCardGame1Tests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +509,7 @@
 				21B9718F191670D400824298 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
